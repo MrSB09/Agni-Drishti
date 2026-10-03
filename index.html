@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        FireWatch | Satellite Fire Monitoring System
+    </title>
+
+
+    <!-- =====================================================
+         LEAFLET MAP CSS
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+
+    <!-- =====================================================
+         FIREWATCH STYLES
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header>
+
+        <div>
+
+            <h1>
+                🔥 FireWatch
+            </h1>
+
+            <p>
+                Satellite Fire Monitoring & Alert System
+            </p>
+
+        </div>
+
+
+        <div class="status">
+            ● SYSTEM ONLINE
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN DASHBOARD
+         ===================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             STATISTICS
+             ================================================= -->
+
+        <section class="stats">
+
+
+            <div class="card">
+
+                <h3>
+                    Active Fires
+                </h3>
+
+                <strong id="fireCount">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    High Priority
+                </h3>
+
+                <strong id="highPriority">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Last Update
+                </h3>
+
+                <strong id="lastUpdate">
+                    —
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             MAP + ALERTS
+             ================================================= -->
+
+        <section class="dashboard">
+
+
+            <!-- =============================================
+                 FIRE DETECTION MAP
+                 ============================================= -->
+
+            <div class="map-container">
+
+                <h2>
+                    🔥 Fire Detection Map
+                </h2>
+
+                <div id="map"></div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 ALERT SIDEBAR
+                 ============================================= -->
+
+            <div class="alerts">
+
+                <h2>
+                    🚨 Active Alerts
+                </h2>
+
+
+                <div id="alertList">
+
+                    <div class="alert">
+
+                        <strong>
+                            📡 CONNECTING...
+                        </strong>
+
+                        <p>
+                            Waiting for NASA FIRMS data.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         LEAFLET MAP JAVASCRIPT
+         ===================================================== -->
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+
+    <!-- =====================================================
+         FIREWATCH JAVASCRIPT
+         ===================================================== -->
+
+    <script src="/script.js"></script>
+
+
+</body>
+
+</html>
